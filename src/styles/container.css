@@ -7,11 +7,13 @@
   padding-left: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  max-width: 1400px;
 }
 
 @media screen and (min-width: 400px) {
   :root {
-    --container-padding: 8px;
+    --container-padding: 24px;
   }
 }
 

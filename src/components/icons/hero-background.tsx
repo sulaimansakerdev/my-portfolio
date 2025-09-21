@@ -4,7 +4,7 @@ interface Props {
 
 const HeroBackground: React.FC<Props> = ({ className }) => {
   return (
-    <svg
+    <svg 
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="1025"
@@ -14,7 +14,6 @@ const HeroBackground: React.FC<Props> = ({ className }) => {
       className={className}
     >
       <rect width="1025" height="764" rx="382" fill="url(#pattern0_15_68)" />
-
       <rect width="1025" height="764" rx="382" fill="url(#paint0_linear_15_68)" />
 
       <defs>
@@ -35,8 +34,8 @@ const HeroBackground: React.FC<Props> = ({ className }) => {
           y2="-162.594"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.218511" stop-color="#1A1A1A" />
-          <stop offset="0.922752" stop-color="#1A1A1A" stop-opacity="0.65" />
+          <stop offset="0.218511" stopColor="#1A1A1A" />
+          <stop offset="0.922752" stopColor="#1A1A1A" stopOpacity="0.65" />
         </linearGradient>
 
         <image

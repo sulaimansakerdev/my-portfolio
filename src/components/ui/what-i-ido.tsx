@@ -1,3 +1,6 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
 const items = [
   {
     id: "1",
@@ -30,33 +33,54 @@ const items = [
     des: "From text to insight, I craft Natural Language Processing solutions that decode language intricacies, revolutionizing data comprehension and empowering your business for success in the digital age",
   },
 ];
-
-const WhatIDo = () => {
+const WhatIDo: React.FC = () => {
   return (
-    <div>
-      <div className="text-center">
-        <h2 className="font-extrabold text-[2.8125rem]">What I do</h2>
+    <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}>
 
-        <div className="font-semibold text-[0.875rem] bg-gradient-to-r from-sky-400 to-white bg-clip-text text-transparent mb-40">
-          My Services
+      <div id="services" className="text-center">
+
+        <h2 className="font-extrabold text-[var(--maintitle)] text-[24px] md:text-[34px] xl:text-[2.8125rem]">
+          What I do
+        </h2>
+
+        <div className="font-semibold color-gradiant mb-[40px] text-center text-[13px] md:text-[0.875rem]">
+          <span className="[background-image:var(--titlegradient)] to-white bg-clip-text text-transparent ">
+            My Services
+          </span>
         </div>
+        
       </div>
 
-      <div className="grid grid-cols-3 gap-x-20 gap-y-26">
-        {items.map(({ id, title, des }) => (
-          <div
+      <div className="flex flex-col justify-center items-center gap-x-20 gap-y-[26px] sm:flex-col md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+
+        {items.map(({ id, title, des }, index) => (
+          <motion.div
             key={id}
-            className="border border-[#2B2B2B] rounded-2xl p-40 bg-[linear-gradient(120deg,#1C1C1C_50%,#050505_100%)]"
-          >
+            className="border md:w-full w-[85%] border-[var(--cardborder)] rounded-2xl p-40 bg-[var(--cardgradient)] "
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: index * 0.3, duration: 0.6 }}>
+
             <div>
-              <div className="font-semibold text-2xl mb-18">{title}</div>
-              <p className="text-sm text-body-text-color">{des}</p>
+
+              <div className="font-semibold text-2xl mb-18 h-[64px] ">
+                {title}
+              </div>
+
+              <p className="text-sm text-body-text-color h-[121px] text-[var(--subtitle)]">
+                {des}
+              </p>
+
             </div>
-          </div>
+
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
-
 export default WhatIDo;

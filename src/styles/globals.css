@@ -4,23 +4,56 @@
   --background: #1a1a1a;
   --foreground: #ededed;
   --header-height: 113px;
+  --logocolor:#FFFFFF;
+  --maintitle:#FFFFFF;
+  --title :#C1C1C1;
+  --subtitle:#A9A9A9;
+  --border:#D6DDED;
+  --cardgradient:  linear-gradient(120deg, #1C1C1C 50%, #050505 100%);
+  --titlegradient: linear-gradient(to right, #4FC3F7, #ffffff);
+  --menucard: #000;
+  --cardborder:#2B2B2B;
+  transition: 
+  background-color 0.3s ease,
+  color 0.4s ease,
+
+
+}
+
+.light{
+  --maintitle:#484E53;
+  --title :#484E53;
+  --subtitle:#484E53;
+  --background:#E0E8F6;
+  --border:#484E53;
+  --cardgradient:#FFFFFF;
+  --titlegradient: linear-gradient(to right, #4FC3F7,#484E53);
+  --cardborder: #4FC3F7;
+  --logocolor:#000000;
+  --menucard: #FFFFFF
+
+
+}
+.light .hero-bg{
+  display: none;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
   --spacing: 1px;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--title);
   font-family: var(--font-inter);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
   scroll-padding-top: calc(var(--header-height) + 32px);
+  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -28,3 +61,28 @@ html {
     @apply text-neutral-200;
   }
 }
+.type-project ul .active{
+  background-color: #484E53;
+  color: #F5F5F5;
+  transition: 0.4s ;
+
+}
+@keyframes menuAnimate {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fade-up 3s ease forwards;
+}
+
