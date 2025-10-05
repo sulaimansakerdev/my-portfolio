@@ -17,7 +17,7 @@
   --foreground: #c1c1c1;
 
   --title-gradient: linear-gradient(to right, #4fc3f7, #ffffff);
-  --card-gradient: linear-gradient(120deg, #1c1c1c 50%, #050505 100%);
+  --card-gradient:  #232323;
 }
 
 @theme inline {

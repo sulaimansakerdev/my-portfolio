@@ -44,10 +44,10 @@ const Header = () => {
         <LogoIcon className="w-full text-black dark:text-white" />
       </div>
 
-      <nav className="hidden md:flex md:gap-15 lg:gap-30 xl:gap-160 items-center">
+      <nav className="hidden md:flex md:gap-15 lg:gap-30 xl:gap-160 items-center ">
         <NavLinks items={navItems.slice(0, -1)} />
 
-        <ButtonAsLink href="#contact-me">Contact Me</ButtonAsLink>
+        <ButtonAsLink href="#contact-me" className="border-2 dark:border-1 dark:text-white text-neutral-600 ">Contact Me</ButtonAsLink>
 
         <DarkModeToggle />
       </nav>

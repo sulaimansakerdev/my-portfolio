@@ -19,7 +19,7 @@ const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
       href={href}
       target="_blank"
       className={classNames(
-        "border border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer",
+        "border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer transition duration-300",
         {
           "rounded-lg md:px-10 lg:px-19 py-11": variant === "normal",
           "rounded-full px-49.5 py-16": variant === "rounded",

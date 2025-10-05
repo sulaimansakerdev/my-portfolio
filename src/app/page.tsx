@@ -8,7 +8,7 @@ import GetInTouch from "@/components/ui/get-in-touch";
 export default function Home() {
   return (
     <main className="fade-up">
-      <div className="mb-177">
+      <div className="mb-177 mt-30">
         <Hero />
       </div>
 

@@ -26,7 +26,7 @@ const MobileMenu = ({ items }: MobileMenuProps) => {
       {showMenu && (
         <div className="fixed inset-0 bg-background/85 z-50 flex justify-center">
           <div className="w-[85%] animate-[menuAnimate_0.7s_1] p-4 flex flex-col items-start gap-10">
-            <ul className="w-full p-15 flex flex-col items-center gap-10 rounded-10 bg-black dark:bg-white translate-y-[50%]">
+            <ul className="w-full p-15 flex flex-col items-center gap-10 rounded-10 dark:bg-black bg-white translate-y-[50%]">
               <li className="w-full text-right">
                 <button
                   className="hover:rotate-[180deg] hover:text-[1.7rem] transition-all duration-300 mt-4 px-4 py-2 text-white rounded"

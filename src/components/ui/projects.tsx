@@ -154,7 +154,7 @@ const Projects = () => {
                   setCurrentActive(cat.key);
                   setShowAll(false);
                 }}
-                className={`min-w-115 px-25 h-55 py-15 rounded-50 border text-xs xl:text-sm md:text-base border-neutral-600 text-neutral-600 font-normal cursor-pointer ${
+                className={`min-w-115 px-25 h-55 py-15 rounded-50 border text-xs xl:text-sm md:text-base border-neutral-600 text-neutral-600  dark:text-neutral-400 font-normal cursor-pointer ${
                   currentActive === cat.key ? "active" : ""
                 }`}
               >
@@ -182,9 +182,9 @@ const Projects = () => {
                 />
                 <div className="pb-10 pt-7 flex justify-between items-end">
                   <div>
-                    <div className="pt-12 mb-18 text-lg font-bold mt-5">{title}</div>
+                    <div className="pt-12 mb-18 text-xl font-bold mt-5 text-neutral-600 dark:text-stone-300">{title}</div>
 
-                    <p className="text-sm text-neutral-400 dark:text-neutral-600 text-body-text-color">
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400 text-body-text-color">
                       {des}
                     </p>
                   </div>
@@ -205,7 +205,7 @@ const Projects = () => {
           <button
             onClick={() => setShowAll(!showAll)}
             disabled={filteredItems.length <= 6}
-            className={`border border-neutral-600 transition duration-300 rounded-75 w-210 h-56 text-center cursor-pointer
+            className={`font-normal text-base border text-neutral-600 dark:text-white border-neutral-600 transition duration-300 rounded-75 w-210 h-56 text-center cursor-pointer
           ${filteredItems.length <= 6 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-700"}`}
           >
             {showAll ? "Show Less" : "View All"}

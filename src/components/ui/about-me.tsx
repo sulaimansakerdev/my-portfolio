@@ -25,7 +25,7 @@ const AboutMe: React.FC = () => {
         </span>
       </div>
 
-      <p id="resume" className="mb-40 sm:text-xs md:text-base">
+      <p id="resume" className="mb-40 font-medium sm:text-xs md:text-base dark:text-neutral-200 text-neutral-600">
         I am Sulaiman Saker, a Software Engineer with 7+ years of experience. I am based in Dubai.
         <br />
         <br />I began my career in 2017 at Haram Transfers, developing desktop accounting

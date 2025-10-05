@@ -5,7 +5,7 @@ import ButtonAsLink from "../ui/buttonAsLink";
 
 const Hero = () => {
   return (
-    <section className="w-full pt-[var(--header-height)]">
+    <section className="w-full pt-[var(--header-height)] mt-35 ">
       <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex justify-center">
         <HeroBackground className="h-[100vh]" />
       </div>

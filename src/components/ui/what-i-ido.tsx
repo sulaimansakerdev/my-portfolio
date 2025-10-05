@@ -56,16 +56,16 @@ const WhatIDo: React.FC = () => {
         {items.map(({ id, title, des }, index) => (
           <motion.div
             key={id}
-            className="border md:w-full w-[85%] border-zinc-800 dark:border-sky-400 rounded-2xl p-40 bg-[var(--card-gradient)]"
+            className="border md:w-full w-[85%] border-zinc-800  rounded-2xl p-40 bg-[var(--card-gradient)]"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ delay: index * 0.3, duration: 0.6 }}
           >
             <div>
-              <div className="font-semibold text-2xl mb-18 h-64">{title}</div>
+              <div className="font-semibold dark:text-white text-base mb-18 h-64">{title}</div>
 
-              <p className="text-sm text-body-text-color h-121 text-neutral-400 dark:text-neutral-600">
+              <p className="font-normal text-sm text-body-text-color h-121 text-neutral-600 dark:text-neutral-200">
                 {des}
               </p>
             </div>
