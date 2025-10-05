@@ -1,9 +1,10 @@
-import classNames from "classnames";
-import React, { ReactNode } from "react";
+import React from "react";
+
 interface ModeIconProps {
-    className?: string;
-  }
-const ModeIcon: React.FC<ModeIconProps> = ({ className }) =>{
+  className?: string;
+}
+
+const ModeIcon: React.FC<ModeIconProps> = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
       <path

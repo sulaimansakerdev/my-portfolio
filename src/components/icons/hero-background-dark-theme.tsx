@@ -2,19 +2,19 @@ interface Props {
   className?: string;
 }
 
-const HeroBackground: React.FC<Props> = ({ className }) => {
+const HeroBackgroundDarkTheme: React.FC<Props> = ({ className }) => {
   return (
-    <svg 
+    <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="1025"
-      height="764"
-      viewBox="0 0 1025 764"
+      height="892"
+      viewBox="0 0 1025 892"
       fill="none"
       className={className}
     >
-      <rect width="1025" height="764" rx="382" fill="url(#pattern0_15_68)" />
-      <rect width="1025" height="764" rx="382" fill="url(#paint0_linear_15_68)" />
+      <rect width="1025" height="892" rx="382" fill="url(#pattern0_15_68)" />
+      <rect width="1025" height="892" rx="382" fill="url(#paint0_linear_15_68)" />
 
       <defs>
         <pattern
@@ -50,4 +50,4 @@ const HeroBackground: React.FC<Props> = ({ className }) => {
   );
 };
 
-export default HeroBackground;
+export default HeroBackgroundDarkTheme;

@@ -1,26 +1,35 @@
 import classNames from "classnames";
+import Link from "next/link";
 import React, { ReactNode } from "react";
 
-interface ButtonProps {
+interface ButtonAsLinkProps {
+  href: string;
   children: ReactNode;
   variant?: "normal" | "rounded";
   className?: string;
 }
-const Button: React.FC<ButtonProps> = ({ variant = "normal", children, className }) => {
+const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
+  variant = "normal",
+  href,
+  children,
+  className,
+}) => {
   return (
-    <button
+    <Link
+      href={href}
+      target="_blank"
       className={classNames(
         "border border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer",
         {
-          "rounded-lg md:px-10 lg:px-16 py-12": variant === "normal",
+          "rounded-lg md:px-10 lg:px-19 py-11": variant === "normal",
           "rounded-full px-49.5 py-16": variant === "rounded",
         },
         className
       )}
     >
       {children}
-    </button>
+    </Link>
   );
 };
 
-export default Button;
+export default ButtonAsLink;

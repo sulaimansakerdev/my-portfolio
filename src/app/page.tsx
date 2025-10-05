@@ -7,30 +7,32 @@ import GetInTouch from "@/components/ui/get-in-touch";
 
 export default function Home() {
   return (
-    <main className= "fade-up ">
-      <div className="mb-277 ">
+    <main className="fade-up">
+      <div className="mb-177">
         <Hero />
       </div>
 
-      <div className="flex justify-center mb-277 ">
+      <div className="flex justify-center mb-155">
         <div className="w-3/4 md:w-1/2">
           <AboutMe />
         </div>
-      </div> 
+      </div>
 
-      <div className="container mb-277 ">
+      <div className="container mb-155">
         <WhatIDo />
       </div>
 
-      <div className="container mb-277 ">
+      <div className="container mb-155">
         <Projects />
       </div>
 
-      <div className="container mb-220 "> <GetInTouch /> </div>
+      <div className="container mb-155">
+        <GetInTouch />
+      </div>
 
-      <div className="container border-b ">
+      <div className="container border-b">
         <LetsWorkTogether />
-      </div> 
+      </div>
     </main>
   );
 }

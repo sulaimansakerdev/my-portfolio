@@ -1,12 +1,6 @@
 const GmailIcon = () => {
   return (
-    <svg
-      width="25"
-      height="25"
-      viewBox="0 0 25 25"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M4.40334 19.9134H7.38628V12.6691L3.12497 9.47314V18.6351C3.12497 19.3424 3.69816 19.9134 4.40334 19.9134Z"
         fill="#4285F4"
