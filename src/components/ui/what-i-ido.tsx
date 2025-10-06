@@ -40,7 +40,7 @@ const WhatIDo: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <div id="services" className="text-center">
+      <div id="services" className="text-center  scroll-mt-60">
         <h2 className="font-extrabold text-neutral-600 dark:text-white text-2xl md:text-3xl xl:text-5xl">
           What I do
         </h2>

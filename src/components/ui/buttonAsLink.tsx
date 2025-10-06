@@ -17,7 +17,7 @@ const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
   return (
     <Link
       href={href}
-      target="_blank"
+      // target="_blank"
       className={classNames(
         "border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer transition duration-300",
         {

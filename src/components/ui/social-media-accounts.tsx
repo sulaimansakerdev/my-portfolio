@@ -26,7 +26,7 @@ const SocialMediaAccounts = () => {
     <div className="flex justify-center items-center gap-20">
       {socialLinks.map((item, index) => (
         <a href={item.url} key={index} target="_blank" rel="noopener noreferrer">
-          <img className="cursor-pointer" src={item.icon} alt={`social-icon-${index}`} />
+          <img className="cursor-pointer filter brightness-0 saturate-100 invert-[25%] sepia-[5%]  dark:invert-[70%] dark:brightness-[85%] "  src={item.icon} alt={`social-icon-${index}`} />
         </a>
       ))}
     </div>

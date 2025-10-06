@@ -38,7 +38,7 @@ const GetInTouch: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <div className="text-center" id="contact-me">
+      <div className="text-center scroll-mt-55" id="contact-me">
         <h2 className="font-extrabold sm:text-2xl md:text-3xl xl:text-5xl text-neutral-600 dark:text-white">
           Get In Touch
         </h2>
@@ -58,7 +58,7 @@ const GetInTouch: React.FC = () => {
               </label>
 
               <input
-                className="w-full h-70 border border-neutral-600 dark:border-slate-200 rounded-10 hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:font-normal placeholder:text-base px-8 placeholder:text-zinc-400"
+                className="w-full h-70 border border-neutral-600 dark:border-slate-200 rounded-10 rounded-lg hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:font-normal placeholder:text-base px-8 placeholder:text-zinc-400"
                 required
                 autoComplete="off"
                 type="text"
@@ -77,7 +77,7 @@ const GetInTouch: React.FC = () => {
               </label>
 
               <input
-                className="w-full h-70 border bg-transparent border-neutral-600 dark:border-slate-200 rounded-10 hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:font-normal placeholder:text-base px-8 placeholder:text-zinc-400"
+                className="w-full h-70 border bg-transparent border-neutral-600 rounded-lg dark:border-slate-200 rounded-10 hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:font-normal placeholder:text-base px-8 placeholder:text-zinc-400"
                 autoComplete="off"
                 required
                 type="email"
@@ -102,7 +102,7 @@ const GetInTouch: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setIsOpen(!isOpen)}
-                  className="w-full h-70 hover:border-sky-400 border text-base font-normal text-zinc-400 px-8 border-neutral-600 dark:border-slate-200 rounded-10  py-3 text-left flex justify-between items-center"
+                  className="w-full h-70 hover:border-sky-400 border rounded-lg text-base font-normal text-zinc-400 px-8 border-neutral-600 dark:border-slate-200 rounded-10  py-3 text-left flex justify-between items-center"
                 >
                   <span>{selected}</span>
                   <img
@@ -147,7 +147,7 @@ const GetInTouch: React.FC = () => {
               </label>
 
               <textarea
-                className="focus:border-sky-400 hover:border-sky-400 focus:outline-none p-4 w-full h-70 border border-neutral-600 dark:border-slate-200 rounded-10 min-h-222 resize-y"
+                className="focus:border-sky-400 rounded-lg hover:border-sky-400 focus:outline-none p-4 w-full h-70 border border-neutral-600 dark:border-slate-200 rounded-10 min-h-222 resize-y"
                 required
                 name="message"
                 id="message"
@@ -158,7 +158,7 @@ const GetInTouch: React.FC = () => {
 
             {/* Submit */}
             <button
-              className={`w-full p-15 text-lg font-bold rounded-10 transition duration-300 ${
+              className={`w-full p-15 text-lg font-bold rounded-lg transition duration-300 ${
                 isDisabled
                   ? "bg-gray-300 text-gray-600 cursor-not-allowed"
                   : "bg-neutral-600 text-white dark:bg-white dark:text-black hover:bg-sky-400 hover:text-white cursor-pointer "

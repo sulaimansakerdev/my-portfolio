@@ -14,7 +14,7 @@ const AboutMe: React.FC = () => {
     >
       <h2
         id="about"
-        className="font-extrabold text-2xl md:text-3xl xl:text-5xl text-neutral-600 dark:text-white"
+        className="font-extrabold text-2xl md:text-3xl xl:text-5xl text-neutral-600 dark:text-white  scroll-mt-60"
       >
         About Me
       </h2>

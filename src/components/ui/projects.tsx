@@ -127,12 +127,12 @@ const Projects = () => {
   const displayedItems = showAll ? filteredItems : filteredItems.slice(0, 6);
 
   return (
-    <motion.div
+    <motion.div 
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <div id="projects" className="text-center">
+      <div id="projects" className="text-center scroll-mt-60">
         <h2 className="font-extrabold text-neutral-600 dark:text-white text-2xl md:text-3xl xl:text-5xl">
           Projects
         </h2>
@@ -154,7 +154,7 @@ const Projects = () => {
                   setCurrentActive(cat.key);
                   setShowAll(false);
                 }}
-                className={`min-w-115 px-25 h-55 py-15 rounded-50 border text-xs xl:text-sm md:text-base border-neutral-600 text-neutral-600  dark:text-neutral-400 font-normal cursor-pointer ${
+                className={`min-w-115 px-25 h-55 py-15 border rounded-full text-xs xl:text-sm md:text-base border-neutral-600 text-neutral-600  dark:text-neutral-400 font-normal cursor-pointer ${
                   currentActive === cat.key ? "active" : ""
                 }`}
               >
