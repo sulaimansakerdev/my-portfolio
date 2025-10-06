@@ -205,7 +205,7 @@ const Projects = () => {
           <button
             onClick={() => setShowAll(!showAll)}
             disabled={filteredItems.length <= 6}
-            className={`font-normal text-base border text-neutral-600 dark:text-white border-neutral-600 transition duration-300 rounded-75 w-210 h-56 text-center cursor-pointer
+            className={`font-normal text-base border rounded-full text-neutral-600 dark:text-white border-neutral-600 transition duration-300 rounded-75 w-210 h-56 text-center cursor-pointer
           ${filteredItems.length <= 6 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-700"}`}
           >
             {showAll ? "Show Less" : "View All"}
