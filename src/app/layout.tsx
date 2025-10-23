@@ -3,9 +3,9 @@ import "@/styles/container.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/layout/header";
 import Footer from "@/components/ui/footer";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import HeaderWithScroll from "@/components/layout/header-with-scroll";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +29,7 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="fixed top-0 w-full z-10">
             <div className="container">
-              <Header />
+              <HeaderWithScroll />
             </div>
           </div>
 

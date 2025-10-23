@@ -1,6 +1,6 @@
-"use client";
 import React from "react";
-import { motion } from "framer-motion";
+import MotionDiv from "../animation/motion-div";
+
 const items = [
   {
     id: "1",
@@ -33,14 +33,15 @@ const items = [
     des: "From text to insight, I craft Natural Language Processing solutions that decode language intricacies, revolutionizing data comprehension and empowering your business for success in the digital age",
   },
 ];
+
 const WhatIDo: React.FC = () => {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <div id="services" className="text-center  scroll-mt-60">
+      <div id="services" className="text-center">
         <h2 className="font-extrabold text-neutral-600 dark:text-white text-2xl md:text-3xl xl:text-5xl">
           What I do
         </h2>
@@ -54,9 +55,9 @@ const WhatIDo: React.FC = () => {
 
       <div className="flex flex-col justify-center items-center gap-x-20 gap-y-26 sm:flex-col md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {items.map(({ id, title, des }, index) => (
-          <motion.div
+          <MotionDiv
             key={id}
-            className="border md:w-full w-[85%] border-zinc-800  rounded-2xl p-40 bg-[var(--card-gradient)]"
+            className="border md:w-full w-[85%] border-zinc-800 rounded-2xl p-40 bg-white dark:bg-neutral-800"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -69,10 +70,10 @@ const WhatIDo: React.FC = () => {
                 {des}
               </p>
             </div>
-          </motion.div>
+          </MotionDiv>
         ))}
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 };
 export default WhatIDo;

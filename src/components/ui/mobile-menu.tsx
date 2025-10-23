@@ -7,10 +7,10 @@ import NavLinks from "./nav-links";
 import MenuIcon from "../icons/menu-icon";
 
 interface MobileMenuProps {
-  items: { label: string; href: string }[];
+  links: { label: string; href: string }[];
 }
 
-const MobileMenu = ({ items }: MobileMenuProps) => {
+const MobileMenu = ({ links }: MobileMenuProps) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleShowMenu = () => {
@@ -19,7 +19,7 @@ const MobileMenu = ({ items }: MobileMenuProps) => {
 
   return (
     <div className="md:hidden">
-      <button className="flex" onClick={toggleShowMenu}>
+      <button onClick={toggleShowMenu}>
         <MenuIcon className="text-white dark:text-black" />
       </button>
 
@@ -37,7 +37,7 @@ const MobileMenu = ({ items }: MobileMenuProps) => {
               </li>
 
               <NavLinks
-                items={items}
+                links={links}
                 onClick={toggleShowMenu}
                 className="flex-col gap-10 text-center"
               />
