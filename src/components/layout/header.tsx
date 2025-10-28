@@ -13,7 +13,7 @@ const navLinks = [
   {
     label: "Resume",
     target: "_blank",
-    href: "https://docs.google.com/document/d/1INrQzOB_rxyKBxSJrnYwZFc0X0jbXM-U/edit?usp=sharing&ouid=113687342906079413323&rtpof=true&sd=true",
+    href: "",
   },
 ];
 

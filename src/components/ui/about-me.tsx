@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonAsLink from "./buttonAsLink";
 import MotionDiv from "../animation/motion-div";
+import SectionHeader from "./section-header";
 
 const AboutMe: React.FC = () => {
   return (
@@ -10,18 +11,7 @@ const AboutMe: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <h2
-        id="about"
-        className="font-extrabold text-2xl md:text-3xl xl:text-5xl text-neutral-600 dark:text-white"
-      >
-        About Me
-      </h2>
-
-      <div className="font-semibold color-gradiant mb-40 text-center text-sm">
-        <span className="[background-image:var(--title-gradient)] to-white bg-clip-text text-transparent font-semibold color-gradiant mb-40 text-center text-xs xl:text-sm md:text-base">
-          Get to know me
-        </span>
-      </div>
+      <SectionHeader id="about" title="About Me" subtitle="Get to know me" />
 
       <p className="mb-40 font-medium sm:text-xs md:text-base dark:text-neutral-200 text-neutral-600">
         Hi there! I'm [Your Name], a data scientist specializing in data analytics, predictive

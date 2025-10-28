@@ -22,7 +22,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --leading-auto: auto;
+  --text-5xl--line-height: 1.25;
 }
 
 * {

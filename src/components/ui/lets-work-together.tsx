@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "./button";
-import GmailIcon from "../icons/gmail-icon";
 import MotionDiv from "../animation/motion-div";
+import EmailLink from "./email-link";
 
 const LetsWorkTogether: React.FC = () => {
   return (
@@ -9,20 +8,16 @@ const LetsWorkTogether: React.FC = () => {
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="flex gap-10 align-center justify-between mb-40"
     >
-      <div className="text-lg md:text-5xl lg:text-6xl font-medium tracking-wide dark:text-neutral-200 text-gray-800">
-        <div className="">Let&apos;s</div>
-        <div>Work Together -</div>
-      </div>
-      <div className="flex items-center justify-center md:items-end md:justify-end">
-        <a href="mailto:Georgy@gmail.com">
-          <Button className="flex items-center justify-center md:items-center md:justify-center gap-5 text-base md:text-lg lg:text-2xl px-10 ">
-            <GmailIcon />
-            Georgy@gmail.com
-          </Button>
-        </a>
-      </div>
+      <section className="flex gap-10 items-center justify-between mb-40">
+        <h2 className="text-lg md:text-5xl lg:text-6xl font-medium tracking-wide dark:text-neutral-200 text-gray-800">
+          <span className="">Let&apos;s</span>
+          <br />
+          <span>Work Together -</span>
+        </h2>
+
+        <EmailLink email="Georgy@gmail.com" />
+      </section>
     </MotionDiv>
   );
 };

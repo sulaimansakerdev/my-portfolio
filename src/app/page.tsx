@@ -3,7 +3,7 @@ import AboutMe from "@/components/ui/about-me";
 import LetsWorkTogether from "@/components/ui/lets-work-together";
 import WhatIDo from "@/components/ui/what-i-ido";
 import GetInTouch from "@/components/ui/get-in-touch";
-import ProjectsSection from "@/components/ui/projects/projects-section";
+import Projects from "@/components/ui/projects/projects";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <div className="container mb-155">
-        <ProjectsSection />
+        <Projects />
       </div>
 
       <div className="container mb-155">
