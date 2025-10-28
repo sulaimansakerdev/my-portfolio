@@ -1,6 +1,6 @@
 import React from "react";
 import MotionDiv from "../animation/motion-div";
-import EmailLink from "./email-link";
+import EmailLink from "../ui/email-link";
 
 const LetsWorkTogether: React.FC = () => {
   return (

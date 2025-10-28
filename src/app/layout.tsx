@@ -3,7 +3,7 @@ import "@/styles/container.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Footer from "@/components/ui/footer";
+import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import HeaderWithScroll from "@/components/layout/header-with-scroll";
 

@@ -10,10 +10,22 @@
   --header-height: 92px;
 }
 
+@media screen and (min-width: 768px) {
+  :root {
+    --header-height: 100px;
+  }
+}
+
 .dark {
   --background: #1a1a1a;
   --foreground: theme(colors.zinc.300);
   --title-gradient: linear-gradient(to right, theme(colors.sky.400), theme(colors.white));
+}
+
+@layer base {
+  .dark p {
+    @apply text-neutral-200;
+  }
 }
 
 @theme inline {
@@ -39,23 +51,7 @@ body {
   font-family: var(--font-inter);
 }
 
-@layer base {
-  .dark p {
-    @apply text-neutral-200;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    --header-height: 100px;
-  }
-}
-
-.fade-up {
-  animation: fade-up 3s ease forwards;
-}
-
-@keyframes menuAnimate {
+@keyframes menu-animate {
   0% {
     transform: scale(0);
   }

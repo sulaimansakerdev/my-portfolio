@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import { z } from "zod";
 import MotionDiv from "../animation/motion-div";
-import SectionHeader from "./section-header";
-import FormSelect from "./forms/form-select";
-import FormTextarea from "./forms/form-textarea";
-import SubmitButton from "./forms/submit-button";
-import FormInput from "./forms/form-input";
+import FormSelect from "../form/form-select";
+import FormTextarea from "../form/form-textarea";
+import SubmitButton from "../form/submit-button";
+import FormInput from "../form/form-input";
+import SectionHeader from "../ui/section-header";
 
 const options = ["Option One", "Option Two", "Option Three", "Option Four"];
 

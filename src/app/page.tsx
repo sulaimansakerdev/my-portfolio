@@ -1,13 +1,13 @@
-import Hero from "@/components/layout/hero";
-import AboutMe from "@/components/ui/about-me";
-import LetsWorkTogether from "@/components/ui/lets-work-together";
-import WhatIDo from "@/components/ui/what-i-ido";
-import GetInTouch from "@/components/ui/get-in-touch";
+import Hero from "@/components/sections/hero";
+import AboutMe from "@/components/sections/about-me";
+import GetInTouch from "@/components/sections/get-in-touch";
+import LetsWorkTogether from "@/components/sections/lets-work-together";
+import WhatIDo from "@/components/sections/what-i-ido";
 import Projects from "@/components/ui/projects/projects";
 
 export default function Home() {
   return (
-    <main className="fade-up">
+    <main className="animate-[fade-up_3s_ease_forwards]">
       <div className="md:mb-177">
         <Hero />
       </div>

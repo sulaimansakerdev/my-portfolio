@@ -1,6 +1,6 @@
 import React from "react";
 import MotionDiv from "../animation/motion-div";
-import SectionHeader from "./section-header";
+import SectionHeader from "../ui/section-header";
 
 const items = [
   {

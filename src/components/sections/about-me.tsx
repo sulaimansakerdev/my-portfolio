@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonAsLink from "./buttonAsLink";
 import MotionDiv from "../animation/motion-div";
-import SectionHeader from "./section-header";
+import SectionHeader from "../ui/section-header";
+import ButtonAsLink from "../ui/buttonAsLink";
 
 const AboutMe: React.FC = () => {
   return (

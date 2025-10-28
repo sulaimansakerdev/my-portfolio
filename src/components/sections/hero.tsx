@@ -14,11 +14,11 @@ const Hero = () => {
         <div className="md:w-1/2 flex flex-col items-center">
           <Image src={photo} alt="" />
 
-          <h1 className="leading-auto text-neutral-600 dark:text-white font-bold text-center text-4xl md:text-4xl lg:text-3xl xl:text-6xl">
+          <h1 className="leading-[auto] text-neutral-600 dark:text-white font-bold text-center text-4xl md:text-4xl lg:text-3xl xl:text-6xl">
             Georgy Georgy
           </h1>
 
-          <h2 className="font-semibold leading-auto text-lg md:text-xl lg:text-2xl color-gradiant mb-6 text-center md:text-center">
+          <h2 className="font-semibold leading-[auto] text-lg md:text-xl lg:text-2xl color-gradiant mb-6 text-center md:text-center">
             <span className="[background-image:var(--title-gradient)] to-white bg-clip-text text-transparent">
               Data Sorcerer
             </span>

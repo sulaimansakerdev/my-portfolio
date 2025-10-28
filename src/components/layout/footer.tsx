@@ -1,4 +1,4 @@
-import SocaialMediaAccounts from "./social-media-accounts";
+import SocaialMediaAccounts from "../ui/social-media-accounts";
 
 const Footer = () => {
   return (

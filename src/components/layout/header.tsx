@@ -34,6 +34,7 @@ const Header: React.FC<HeaderProps> = ({ collapsed = false }) => {
 
       <nav className="hidden md:flex md:gap-15 lg:gap-30 xl:gap-160 items-center">
         <NavLinks links={navLinks} />
+
         <ButtonAsLink
           href="#contact-me"
           className="border-2 dark:border-1 dark:text-white text-neutral-600"

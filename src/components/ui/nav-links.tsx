@@ -14,7 +14,7 @@ const NavLinks = ({ links, onClick, className = "" }: NavLinksProps) => {
         <li
           key={link.href}
           onClick={onClick}
-          className=" transition duration-300 hover:text-sky-400 text-zinc-950 dark:text-stone-300"
+          className="hover:text-sky-400 text-zinc-950 dark:text-stone-300 transition duration-300"
         >
           <Link href={link.href} target={link.target}>
             {link.label}
