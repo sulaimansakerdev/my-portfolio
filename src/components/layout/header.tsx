@@ -5,18 +5,7 @@ import MobileMenu from "../ui/mobile-menu";
 import ButtonAsLink from "../ui/button-as-link";
 import classNames from "classnames";
 import Link from "next/link";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Services", href: "#services" },
-  {
-    label: "Resume",
-    target: "_blank",
-    href: "",
-  },
-];
+import navLinks from "@/config/nav-links";
 
 interface HeaderProps {
   collapsed?: boolean;

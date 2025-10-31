@@ -7,14 +7,14 @@ import ProjectCard from "./project-card";
 import AnimatedDiv from "@/components/animation/animated-div";
 
 interface ProjectsGridProps {
-  items: Project[];
   categories: Category[];
+  projects: Project[];
 }
 
-export default function ProjectsGrid({ items, categories }: ProjectsGridProps) {
+export default function ProjectsGrid({ categories, projects }: ProjectsGridProps) {
   const [currentActive, setCurrentActive] = useState("MachineLearning");
 
-  const filteredItems = items.filter((item) => item.category.includes(currentActive));
+  const filteredItems = projects.filter((item) => item.category.includes(currentActive));
 
   const handleCategorySelect = (key: string) => {
     setCurrentActive(key);

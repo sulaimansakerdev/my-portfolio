@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import HeaderWithScroll from "@/components/layout/header-with-scroll";
+import metaData from "@/config/meta-data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Personal portfolio website showcasing projects and experience.",
+  title: metaData.title,
+  description: metaData.description,
 };
 
 export default function RootLayout({

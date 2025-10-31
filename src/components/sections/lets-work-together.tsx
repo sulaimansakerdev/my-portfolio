@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedDiv from "../animation/animated-div";
 import EmailLink from "../ui/email-link";
+import emailId from "@/config/email-id";
 
 const LetsWorkTogether: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const LetsWorkTogether: React.FC = () => {
           <span>Work Together -</span>
         </h2>
 
-        <EmailLink email="Georgy@gmail.com" />
+        <EmailLink emailId={emailId} />
       </section>
     </AnimatedDiv>
   );

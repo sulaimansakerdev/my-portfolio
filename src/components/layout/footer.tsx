@@ -1,10 +1,11 @@
 import SocaialMediaAccounts from "../ui/social-media-accounts";
+import socialMediaAccounts from "@/config/social-media-accounts";
 
 const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-22 md:flex-row-reverse md:justify-between pt-42 pb-45">
       <div>
-        <SocaialMediaAccounts />
+        <SocaialMediaAccounts accounts={socialMediaAccounts} />
       </div>
 
       <div>

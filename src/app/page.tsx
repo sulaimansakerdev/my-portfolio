@@ -2,7 +2,7 @@ import Hero from "@/components/sections/hero";
 import AboutMe from "@/components/sections/about-me";
 import GetInTouch from "@/components/sections/get-in-touch";
 import LetsWorkTogether from "@/components/sections/lets-work-together";
-import WhatIDo from "@/components/sections/what-i-ido";
+import WhatIDo from "@/components/sections/what-i-do";
 import Projects from "@/components/sections/projects/projects";
 
 export default function Home() {

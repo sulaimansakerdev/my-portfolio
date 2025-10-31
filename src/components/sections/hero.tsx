@@ -3,6 +3,7 @@ import HeroBackground from "../ui/hero-background";
 import photo from "../../../public/assets/images/photo.svg";
 import ButtonAsLink from "../ui/button-as-link";
 import AnimatedDiv from "../animation/animated-div";
+import hero from "@/config/hero";
 
 const Hero = () => {
   return (
@@ -27,21 +28,17 @@ const Hero = () => {
             <Image src={photo} alt="" />
 
             <h1 className="leading-[auto] text-neutral-600 dark:text-white font-bold text-center text-4xl md:text-4xl lg:text-3xl xl:text-6xl">
-              Georgy Georgy
+              {hero.title}
             </h1>
 
             <h2 className="font-semibold leading-[auto] text-lg md:text-xl lg:text-2xl color-gradiant mb-6 text-center md:text-center">
               <span className="[background-image:var(--title-gradient)] to-white bg-clip-text text-transparent">
-                Data Sorcerer
+                {hero.subTitle}
               </span>
               🧙‍♂️
             </h2>
 
-            <p className="font-medium text-sm md:text-lg text-center mb-40">
-              As a passionate data scientist, with expertise in machine learning, AI, and data
-              analytics, I thrive on the challenges of exploring complex data landscapes and
-              uncovering meaningful patterns that drive innovation
-            </p>
+            <p className="font-medium text-sm md:text-lg text-center mb-40">{hero.des} </p>
 
             <ButtonAsLink href="#contact-me" variant="rounded">
               Contact Me

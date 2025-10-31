@@ -8,8 +8,7 @@ import Textarea from "../form/textarea";
 import SubmitButton from "../form/submit-button";
 import Input from "../form/input";
 import SectionHeader from "../ui/section-header";
-
-const options = ["Service One", "Service Two", "Service Three", "Service Four"];
+import services from "@/config/services";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
@@ -106,7 +105,7 @@ const GetInTouch: React.FC = () => {
               label="Services"
               value={formData.service}
               onChange={handleChange}
-              options={options}
+              options={services.map((service) => service.title)}
               error={errors.service}
             />
 
