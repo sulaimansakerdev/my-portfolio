@@ -1,15 +1,26 @@
 import React from "react";
 
-interface FormSelectProps {
+interface InputProps {
   id: string;
   label: string;
+  type?: "text" | "email";
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  options: string[];
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  autoComplete?: string;
   error?: string;
 }
 
-const FormSelect: React.FC<FormSelectProps> = ({ id, label, value, onChange, options, error }) => (
+const Input: React.FC<InputProps> = ({
+  id,
+  label,
+  type = "text",
+  value,
+  onChange,
+  placeholder,
+  autoComplete,
+  error,
+}) => (
   <div>
     <label
       htmlFor={id}
@@ -18,26 +29,20 @@ const FormSelect: React.FC<FormSelectProps> = ({ id, label, value, onChange, opt
       {label}
     </label>
 
-    <select
+    <input
       id={id}
+      type={type}
       value={value}
       onChange={onChange}
+      placeholder={placeholder}
+      autoComplete={autoComplete}
       className="w-full h-70 border border-neutral-600 dark:border-slate-200 rounded-lg
       hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:text-zinc-400 px-32"
-    >
-      <option value="" disabled>
-        Select an option
-      </option>
-
-      {options.map((option) => (
-        <option key={option} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
+      aria-invalid={!!error}
+    />
 
     {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
   </div>
 );
 
-export default FormSelect;
+export default Input;

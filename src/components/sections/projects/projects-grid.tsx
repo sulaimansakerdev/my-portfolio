@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Category, Project } from "./projects";
 import CategoryFilter from "./category-filter";
 import ProjectCard from "./project-card";
-import Button from "../button";
 import classNames from "classnames";
+import Button from "@/components/ui/button";
 
 interface ProjectsGridProps {
   items: Project[];

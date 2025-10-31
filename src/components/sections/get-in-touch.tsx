@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import { z } from "zod";
 import MotionDiv from "../animation/motion-div";
-import FormSelect from "../form/form-select";
-import FormTextarea from "../form/form-textarea";
+import Select from "../form/select";
+import Textarea from "../form/textarea";
 import SubmitButton from "../form/submit-button";
-import FormInput from "../form/form-input";
+import Input from "../form/input";
 import SectionHeader from "../ui/section-header";
 
 const options = ["Option One", "Option Two", "Option Three", "Option Four"];
@@ -79,7 +79,7 @@ const GetInTouch: React.FC = () => {
           className="w-600 flex flex-col gap-16"
           aria-label="Contact form"
         >
-          <FormInput
+          <Input
             id="name"
             label="Name"
             value={formData.name}
@@ -89,7 +89,7 @@ const GetInTouch: React.FC = () => {
             error={errors.name}
           />
 
-          <FormInput
+          <Input
             id="email"
             label="Email"
             type="email"
@@ -100,7 +100,7 @@ const GetInTouch: React.FC = () => {
             error={errors.email}
           />
 
-          <FormSelect
+          <Select
             id="service"
             label="Services"
             value={formData.service}
@@ -109,7 +109,7 @@ const GetInTouch: React.FC = () => {
             error={errors.service}
           />
 
-          <FormTextarea
+          <Textarea
             id="message"
             label="Message"
             value={formData.message}

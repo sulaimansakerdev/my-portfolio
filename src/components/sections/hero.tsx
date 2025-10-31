@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroBackground from "../ui/hero-background";
 import photo from "../../../public/assets/images/photo.svg";
-import ButtonAsLink from "../ui/buttonAsLink";
+import ButtonAsLink from "../ui/button-as-link";
 
 const Hero = () => {
   return (

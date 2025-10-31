@@ -1,6 +1,6 @@
 import MotionDiv from "@/components/animation/motion-div";
 import ProjectsGrid from "./projects-grid";
-import SectionHeader from "../section-header";
+import SectionHeader from "@/components/ui/section-header";
 
 export type Project = {
   id: string;

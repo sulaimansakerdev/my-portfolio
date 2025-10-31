@@ -1,6 +1,6 @@
 import React from "react";
 
-interface FormTextareaProps {
+interface TextareaProps {
   id: string;
   label: string;
   value: string;
@@ -10,7 +10,7 @@ interface FormTextareaProps {
   rows?: number;
 }
 
-const FormTextarea: React.FC<FormTextareaProps> = ({
+const Textarea: React.FC<TextareaProps> = ({
   id,
   label,
   value,
@@ -42,4 +42,4 @@ const FormTextarea: React.FC<FormTextareaProps> = ({
   </div>
 );
 
-export default FormTextarea;
+export default Textarea;

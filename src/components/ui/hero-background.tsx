@@ -2,7 +2,7 @@
 
 import { useTheme } from "@/contexts/ThemeContext";
 import HeroBackgroundDarkTheme from "../icons/hero-background-dark-theme";
-import HeroBackgroundLightTheme from "../icons/hero-background-dark-light";
+import HeroBackgroundLightTheme from "../icons/hero-background-light-theme";
 
 interface Props {
   className?: string;
