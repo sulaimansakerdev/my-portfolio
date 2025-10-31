@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Project } from "./projects";
 import LinkIcon from "@/components/icons/link-icon";
+import Project from "@/interfaces/project";
 
 interface ProjectCardProps {
   project: Project;

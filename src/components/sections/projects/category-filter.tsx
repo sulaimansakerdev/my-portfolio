@@ -1,4 +1,4 @@
-import { Category } from "./projects";
+import Category from "@/interfaces/category";
 import classNames from "classnames";
 
 interface CategoryFilterProps {

@@ -16,6 +16,11 @@
   }
 }
 
+.light {
+  color-scheme: light;
+  /* variables will stay the same */
+}
+
 .dark {
   color-scheme: dark;
   --background: #1a1a1a;
@@ -61,16 +66,5 @@ body {
   }
   100% {
     transform: scale(1);
-  }
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

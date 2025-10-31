@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Category, Project } from "./projects";
 import CategoryFilter from "./category-filter";
 import ProjectCard from "./project-card";
 import AnimatedDiv from "@/components/animation/animated-div";
+import Category from "@/interfaces/category";
+import Project from "@/interfaces/project";
 
 interface ProjectsGridProps {
   categories: Category[];
