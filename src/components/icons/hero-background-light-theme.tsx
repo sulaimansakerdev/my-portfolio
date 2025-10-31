@@ -4,14 +4,14 @@ interface Props {
   className?: string;
 }
 
-const HeroBackgroundLightTheme: React.FC<Props> = (props) => (
+const HeroBackgroundLightTheme: React.FC<Props> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1025"
-    height="892"
-    viewBox="0 0 1025 892"
+    height="754"
+    viewBox="0 0 1025 754"
     fill="none"
-    {...props}
+    className={className}
   >
     <rect width="1025" height="892" rx="382" fill="url(#pattern0_134_42)" fillOpacity="0.2" />
     <rect width="1025" height="892" rx="382" fill="url(#paint0_linear_134_42)" />

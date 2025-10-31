@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ variant = "normal", children, className
     <button
       type="button"
       className={classNames(
-        "border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer transition duration-300",
+        "border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer",
         {
           "rounded-lg md:px-10 lg:px-16 py-12": variant === "normal",
           "rounded-full px-49.5 py-16": variant === "rounded",

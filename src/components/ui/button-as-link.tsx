@@ -8,6 +8,7 @@ interface ButtonAsLinkProps {
   variant?: "normal" | "rounded";
   className?: string;
 }
+
 const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
   variant = "normal",
   href,
@@ -18,7 +19,7 @@ const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
     <Link
       href={href}
       className={classNames(
-        "inline-block border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer transition duration-300",
+        "inline-block border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white",
         {
           "rounded-lg md:px-10 lg:px-19 py-11": variant === "normal",
           "rounded-full px-49.5 py-16": variant === "rounded",

@@ -4,6 +4,7 @@ import DarkModeToggle from "../ui/dark-mode-toggle";
 import MobileMenu from "../ui/mobile-menu";
 import ButtonAsLink from "../ui/button-as-link";
 import classNames from "classnames";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -29,7 +30,9 @@ const Header: React.FC<HeaderProps> = ({ collapsed = false }) => {
       })}
     >
       <div className="w-150 md:w-170 lg:w-198">
-        <LogoIcon className="w-full text-black dark:text-white" />
+        <Link href="/">
+          <LogoIcon className="w-full text-black dark:text-white" />
+        </Link>
       </div>
 
       <nav className="hidden md:flex md:gap-15 lg:gap-30 xl:gap-160 items-center">

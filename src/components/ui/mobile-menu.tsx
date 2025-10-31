@@ -24,28 +24,23 @@ const MobileMenu = ({ links }: MobileMenuProps) => {
       </button>
 
       {showMenu && (
-        <div className="fixed inset-0 bg-background/85 z-50 flex justify-center">
-          <div className="w-[85%] animate-[menu-animate_0.7s_1] p-4 flex flex-col items-start gap-10">
-            <ul className="w-full p-15 flex flex-col items-center gap-10 rounded-10 dark:bg-black bg-white translate-y-[50%]">
-              <li className="w-full text-right">
-                <button
-                  className="hover:rotate-[180deg] hover:text-[1.7rem] transition-all duration-300 mt-4 px-4 py-2 text-white rounded"
-                  onClick={toggleShowMenu}
-                >
+        <div className="fixed inset-0 flex justify-center bg-background/85">
+          <div className="relative w-[85%] animate-[menu-animate_0.7s_1]">
+            <div className="absolute top-100 w-full flex flex-col items-center gap-16 dark:bg-black bg-white p-16">
+              <div className="w-full flex justify-end">
+                <button onClick={toggleShowMenu}>
                   <CloseIcon />
                 </button>
-              </li>
+              </div>
 
               <NavLinks
                 links={links}
                 onClick={toggleShowMenu}
-                className="flex-col gap-10 text-center"
+                className="flex-col gap-16 text-center"
               />
 
-              <li>
-                <DarkModeToggle />
-              </li>
-            </ul>
+              <DarkModeToggle />
+            </div>
           </div>
         </div>
       )}

@@ -4,8 +4,7 @@ import { useState } from "react";
 import { Category, Project } from "./projects";
 import CategoryFilter from "./category-filter";
 import ProjectCard from "./project-card";
-import classNames from "classnames";
-import Button from "@/components/ui/button";
+import AnimatedDiv from "@/components/animation/animated-div";
 
 interface ProjectsGridProps {
   items: Project[];
@@ -14,15 +13,11 @@ interface ProjectsGridProps {
 
 export default function ProjectsGrid({ items, categories }: ProjectsGridProps) {
   const [currentActive, setCurrentActive] = useState("MachineLearning");
-  const [showAll, setShowAll] = useState(false);
 
   const filteredItems = items.filter((item) => item.category.includes(currentActive));
 
-  const displayedItems = showAll ? filteredItems : filteredItems.slice(0, 6);
-
   const handleCategorySelect = (key: string) => {
     setCurrentActive(key);
-    setShowAll(false);
   };
 
   return (
@@ -34,19 +29,20 @@ export default function ProjectsGrid({ items, categories }: ProjectsGridProps) {
       />
 
       <div className="flex flex-col justify-center items-center gap-x-25 gap-y-35 sm:flex-col md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-        {displayedItems.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+        {filteredItems.map((project, index) => {
+          const delay = Math.floor(index / 3) * 0.3;
 
-      <div className="flex justify-center">
-        <Button
-          variant="rounded"
-          onClick={() => setShowAll(!showAll)}
-          className={classNames({ hidden: filteredItems.length <= 6 })}
-        >
-          {showAll ? "Show Less" : "Show More"}
-        </Button>
+          return (
+            <AnimatedDiv
+              key={project.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: delay, duration: 1.5 }}
+            >
+              <ProjectCard project={project} />
+            </AnimatedDiv>
+          );
+        })}
       </div>
     </div>
   );

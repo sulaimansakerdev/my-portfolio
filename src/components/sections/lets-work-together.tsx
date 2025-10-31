@@ -1,10 +1,10 @@
 import React from "react";
-import MotionDiv from "../animation/motion-div";
+import AnimatedDiv from "../animation/animated-div";
 import EmailLink from "../ui/email-link";
 
 const LetsWorkTogether: React.FC = () => {
   return (
-    <MotionDiv
+    <AnimatedDiv
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
@@ -18,7 +18,7 @@ const LetsWorkTogether: React.FC = () => {
 
         <EmailLink email="Georgy@gmail.com" />
       </section>
-    </MotionDiv>
+    </AnimatedDiv>
   );
 };
 

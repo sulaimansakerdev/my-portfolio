@@ -7,7 +7,7 @@ import Projects from "@/components/sections/projects/projects";
 
 export default function Home() {
   return (
-    <main className="animate-[fade-up_3s_ease_forwards]">
+    <main>
       <div className="md:mb-177">
         <Hero />
       </div>

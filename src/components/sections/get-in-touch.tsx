@@ -2,14 +2,14 @@
 
 import React, { useState } from "react";
 import { z } from "zod";
-import MotionDiv from "../animation/motion-div";
+import AnimatedDiv from "../animation/animated-div";
 import Select from "../form/select";
 import Textarea from "../form/textarea";
 import SubmitButton from "../form/submit-button";
 import Input from "../form/input";
 import SectionHeader from "../ui/section-header";
 
-const options = ["Option One", "Option Two", "Option Three", "Option Four"];
+const options = ["Service One", "Service Two", "Service Three", "Service Four"];
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
@@ -66,61 +66,63 @@ const GetInTouch: React.FC = () => {
   };
 
   return (
-    <MotionDiv
+    <AnimatedDiv
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <SectionHeader id="contact-me" title="Get In Touch" subtitle="Lets work together" />
+      <section id="contact-me">
+        <SectionHeader title="Get In Touch" subtitle="Lets work together" />
 
-      <div className="flex items-center justify-center">
-        <form
-          onSubmit={handleSubmit}
-          className="w-600 flex flex-col gap-16"
-          aria-label="Contact form"
-        >
-          <Input
-            id="name"
-            label="Name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Full name"
-            autoComplete="name"
-            error={errors.name}
-          />
+        <div className="flex items-center justify-center">
+          <form
+            onSubmit={handleSubmit}
+            className="w-600 flex flex-col gap-16"
+            aria-label="Contact form"
+          >
+            <Input
+              id="name"
+              label="Name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Full name"
+              autoComplete="name"
+              error={errors.name}
+            />
 
-          <Input
-            id="email"
-            label="Email"
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="example@email.com"
-            autoComplete="email"
-            error={errors.email}
-          />
+            <Input
+              id="email"
+              label="Email"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="example@email.com"
+              autoComplete="email"
+              error={errors.email}
+            />
 
-          <Select
-            id="service"
-            label="Services"
-            value={formData.service}
-            onChange={handleChange}
-            options={options}
-            error={errors.service}
-          />
+            <Select
+              id="service"
+              label="Services"
+              value={formData.service}
+              onChange={handleChange}
+              options={options}
+              error={errors.service}
+            />
 
-          <Textarea
-            id="message"
-            label="Message"
-            value={formData.message}
-            onChange={handleChange}
-            error={errors.message}
-          />
+            <Textarea
+              id="message"
+              label="Message"
+              value={formData.message}
+              onChange={handleChange}
+              error={errors.message}
+            />
 
-          <SubmitButton>Get in touch</SubmitButton>
-        </form>
-      </div>
-    </MotionDiv>
+            <SubmitButton>Get in touch</SubmitButton>
+          </form>
+        </div>
+      </section>
+    </AnimatedDiv>
   );
 };
 
