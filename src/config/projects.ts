@@ -16,6 +16,7 @@ const projects: Project[] = [
     title: "Project name/description",
     des: "Technology used sql AILLMS",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "2",
@@ -23,6 +24,7 @@ const projects: Project[] = [
     title: "Project name/description",
     des: "Web Design / Usability Testing sql DATa",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "3",
@@ -30,6 +32,7 @@ const projects: Project[] = [
     title: "Natural Language Processing",
     des: "Web Design / Usability Testing AILLMS DATA",
     category: ["AiLLMS"],
+    link: "#",
   },
   {
     id: "4",
@@ -37,6 +40,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
+    link: "#",
   },
   {
     id: "5",
@@ -44,6 +48,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
+    link: "#",
   },
   {
     id: "6",
@@ -51,6 +56,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
+    link: "#",
   },
   {
     id: "7",
@@ -58,6 +64,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "8",
@@ -65,6 +72,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "9",
@@ -72,6 +80,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "10",
@@ -79,6 +88,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "11",
@@ -86,6 +96,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
+    link: "#",
   },
   {
     id: "12",
@@ -93,6 +104,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
+    link: "#",
   },
   {
     id: "13",
@@ -100,6 +112,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
+    link: "#",
   },
   {
     id: "14",
@@ -107,6 +120,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
+    link: "#",
   },
   {
     id: "15",
@@ -114,6 +128,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
+    link: "#",
   },
   {
     id: "16",
@@ -121,6 +136,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
+    link: "#",
   },
   {
     id: "17",
@@ -128,6 +144,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
+    link: "#",
   },
   {
     id: "18",
@@ -135,6 +152,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
+    link: "#",
   },
   {
     id: "19",
@@ -142,6 +160,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
+    link: "#",
   },
   {
     id: "20",
@@ -149,6 +168,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
+    link: "#",
   },
   {
     id: "21",
@@ -156,6 +176,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
+    link: "#",
   },
   {
     id: "22",
@@ -163,6 +184,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
+    link: "#",
   },
   {
     id: "23",
@@ -170,6 +192,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
+    link: "#",
   },
   {
     id: "24",
@@ -177,6 +200,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
+    link: "#",
   },
   {
     id: "25",
@@ -184,6 +208,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
+    link: "#",
   },
   {
     id: "26",
@@ -191,6 +216,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
+    link: "#",
   },
   {
     id: "27",
@@ -198,6 +224,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
+    link: "#",
   },
   {
     id: "28",
@@ -205,6 +232,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
+    link: "#",
   },
   {
     id: "29",
@@ -212,6 +240,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
+    link: "#",
   },
   {
     id: "30",
@@ -219,6 +248,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
+    link: "#",
   },
   {
     id: "31",
@@ -226,6 +256,7 @@ const projects: Project[] = [
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
+    link: "#",
   },
 ];
 

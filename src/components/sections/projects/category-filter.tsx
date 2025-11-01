@@ -7,24 +7,43 @@ interface CategoryFilterProps {
   activeKey: string;
 }
 
-export default function CategoryFilter({ categories, onSelect, activeKey }: CategoryFilterProps) {
+const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, onSelect, activeKey }) => {
   return (
-    <ul className="flex gap-25 md:gap-25 text-center items-center justify-center flex-wrap">
-      {categories.map((cat) => (
-        <li
-          key={cat.key}
-          onClick={() => onSelect(cat.key)}
-          className={classNames(
-            "min-w-115 px-25 h-55 py-15 border rounded-full text-xs xl:text-sm md:text-base border-neutral-600 cursor-pointer",
-            {
-              "bg-neutral-600 text-neutral-100": activeKey === cat.key,
-              "text-neutral-600 dark:text-neutral-400": activeKey !== cat.key,
-            }
-          )}
-        >
-          {cat.label}
-        </li>
-      ))}
+    <ul
+      className="flex gap-16 md:gap-25 items-center justify-center flex-wrap"
+      role="list"
+      aria-label="Category filter"
+    >
+      {categories.map((cat) => {
+        const isActive = activeKey === cat.key;
+
+        return (
+          <li
+            key={cat.key}
+            role="button"
+            tabIndex={0}
+            aria-pressed={isActive}
+            onClick={() => onSelect(cat.key)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                onSelect(cat.key);
+              }
+            }}
+            className={classNames(
+              "lg:min-w-115 px-25 h-55 py-15 border rounded-full text-xs xl:text-sm md:text-base border-neutral-600 cursor-pointer select-none",
+              {
+                "bg-neutral-600 text-neutral-100": isActive,
+                "text-neutral-600 dark:text-neutral-400": !isActive,
+              }
+            )}
+          >
+            {cat.label}
+          </li>
+        );
+      })}
     </ul>
   );
-}
+};
+
+export default CategoryFilter;

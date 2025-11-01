@@ -17,14 +17,18 @@ const Header: React.FC<HeaderProps> = ({ collapsed = false }) => {
       className={classNames("flex justify-between items-center py-30", {
         "bg-background": collapsed,
       })}
+      role="banner"
     >
       <div className="w-150 md:w-170 lg:w-198">
-        <Link href="/">
+        <Link href="/" aria-label="Go to homepage">
           <LogoIcon className="w-full text-black dark:text-white" />
         </Link>
       </div>
 
-      <nav className="hidden md:flex md:gap-15 lg:gap-30 xl:gap-160 items-center">
+      <nav
+        className="hidden md:flex md:gap-15 lg:gap-30 xl:gap-160 items-center"
+        aria-label="Main navigation"
+      >
         <NavLinks links={navLinks} />
 
         <ButtonAsLink

@@ -10,9 +10,15 @@ const LetsWorkTogether: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <section className="flex gap-10 items-center justify-between mb-40">
-        <h2 className="text-lg md:text-5xl lg:text-6xl font-medium tracking-wide dark:text-neutral-200 text-gray-800">
-          <span className="">Let&apos;s</span>
+      <section
+        className="flex gap-10 items-center justify-between mb-40"
+        aria-labelledby="contact-heading"
+      >
+        <h2
+          id="contact-heading"
+          className="text-lg md:text-5xl lg:text-6xl font-medium tracking-wide dark:text-neutral-200 text-gray-800"
+        >
+          <span>Let&apos;s</span>
           <br />
           <span>Work Together -</span>
         </h2>

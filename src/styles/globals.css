@@ -5,7 +5,7 @@
 :root {
   --background: #e0e8f6;
   --foreground: theme(colors.slate.700);
-  --title-gradient: linear-gradient(to right, theme(colors.sky.400), theme(colors.slate.700));
+  --subtitle-gradient: linear-gradient(to right, theme(colors.sky.400), theme(colors.slate.700));
 
   --header-height: 92px;
 }
@@ -25,7 +25,7 @@
   color-scheme: dark;
   --background: #1a1a1a;
   --foreground: theme(colors.zinc.300);
-  --title-gradient: linear-gradient(to right, theme(colors.sky.400), theme(colors.white));
+  --subtitle-gradient: linear-gradient(to right, theme(colors.sky.400), theme(colors.white));
 }
 
 @layer base {

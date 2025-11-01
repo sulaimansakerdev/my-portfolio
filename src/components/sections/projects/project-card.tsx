@@ -6,11 +6,11 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
-  const { image, title, des } = project;
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const { image, title, des, link } = project;
 
   return (
-    <div className="flex flex-col">
+    <article className="flex flex-col rounded-2xl overflow-hidden shadow-sm">
       <Image
         src={image}
         alt={title}
@@ -26,13 +26,17 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <a
-          href="#"
-          aria-label={`Visit ${title}`}
-          className="hover:rotate-45 transition-transform duration-300"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${title} project`}
+          className="hover:rotate-45 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 rounded"
         >
-          <LinkIcon />
+          <LinkIcon aria-hidden="true" />
         </a>
       </div>
-    </div>
+    </article>
   );
-}
+};
+
+export default ProjectCard;

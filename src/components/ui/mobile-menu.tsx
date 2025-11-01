@@ -14,21 +14,31 @@ const MobileMenu = ({ links }: MobileMenuProps) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleShowMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu((prev) => !prev);
   };
 
   return (
     <div className="md:hidden">
-      <button onClick={toggleShowMenu}>
+      <button
+        onClick={toggleShowMenu}
+        aria-label={showMenu ? "Close menu" : "Open menu"}
+        aria-expanded={showMenu}
+        aria-controls="mobile-menu"
+      >
         <MenuIcon className="text-white dark:text-black" />
       </button>
 
       {showMenu && (
-        <div className="fixed inset-0 flex justify-center bg-background/85">
+        <div
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 flex justify-center bg-background/85"
+        >
           <div className="relative w-[85%] animate-[menu-animate_0.7s_1]">
             <div className="absolute top-100 w-full flex flex-col items-center gap-16 dark:bg-black bg-white p-16">
               <div className="w-full flex justify-end">
-                <button onClick={toggleShowMenu}>
+                <button onClick={toggleShowMenu} aria-label="Close menu">
                   <CloseIcon />
                 </button>
               </div>

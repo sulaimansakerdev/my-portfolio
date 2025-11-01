@@ -70,15 +70,21 @@ const GetInTouch: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <section id="contact-me">
-        <SectionHeader title="Get In Touch" subtitle="Lets work together" />
+      <section id="contact-me" aria-labelledby="contact-heading">
+        <SectionHeader title="Get In Touch" subtitle="Let's work together" className="mb-40" />
 
         <div className="flex items-center justify-center">
           <form
             onSubmit={handleSubmit}
             className="w-600 flex flex-col gap-16"
-            aria-label="Contact form"
+            aria-labelledby="contact-heading"
+            aria-describedby="contact-description"
+            noValidate
           >
+            <p id="contact-description" className="sr-only">
+              Use this form to send a message or request services.
+            </p>
+
             <Input
               id="name"
               label="Name"
@@ -87,6 +93,8 @@ const GetInTouch: React.FC = () => {
               placeholder="Full name"
               autoComplete="name"
               error={errors.name}
+              required
+              aria-required="true"
             />
 
             <Input
@@ -98,6 +106,8 @@ const GetInTouch: React.FC = () => {
               placeholder="example@email.com"
               autoComplete="email"
               error={errors.email}
+              required
+              aria-required="true"
             />
 
             <Select
@@ -107,6 +117,8 @@ const GetInTouch: React.FC = () => {
               onChange={handleChange}
               options={services.map((service) => service.title)}
               error={errors.service}
+              required
+              aria-required="true"
             />
 
             <Textarea
@@ -114,10 +126,13 @@ const GetInTouch: React.FC = () => {
               label="Message"
               value={formData.message}
               onChange={handleChange}
+              placeholder="Write your message here"
               error={errors.message}
+              required
+              aria-required="true"
             />
 
-            <SubmitButton>Get in touch</SubmitButton>
+            <SubmitButton aria-label="Submit contact form">Get in touch</SubmitButton>
           </form>
         </div>
       </section>

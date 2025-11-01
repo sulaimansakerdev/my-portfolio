@@ -4,6 +4,7 @@ interface Project {
   title: string;
   des: string;
   category: string[];
+  link: string;
 }
 
 export default Project;

@@ -12,7 +12,7 @@ interface ProjectsGridProps {
   projects: Project[];
 }
 
-export default function ProjectsGrid({ categories, projects }: ProjectsGridProps) {
+const ProjectsGrid: React.FC<ProjectsGridProps> = ({ categories, projects }) => {
   const [currentActive, setCurrentActive] = useState("MachineLearning");
 
   const filteredItems = projects.filter((item) => item.category.includes(currentActive));
@@ -22,14 +22,17 @@ export default function ProjectsGrid({ categories, projects }: ProjectsGridProps
   };
 
   return (
-    <div className="flex flex-col gap-70">
+    <section aria-labelledby="projects-heading" className="flex flex-col gap-40">
       <CategoryFilter
         categories={categories}
         onSelect={handleCategorySelect}
         activeKey={currentActive}
       />
 
-      <div className="flex flex-col justify-center items-center gap-x-25 gap-y-35 sm:flex-col md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+      <div
+        className="grid grid-cols-1 gap-x-25 gap-y-35 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-items-center"
+        role="list"
+      >
         {filteredItems.map((project, index) => {
           const delay = Math.floor(index / 3) * 0.3;
 
@@ -39,12 +42,15 @@ export default function ProjectsGrid({ categories, projects }: ProjectsGridProps
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: delay, duration: 1.5 }}
+              className="w-full"
             >
               <ProjectCard project={project} />
             </AnimatedDiv>
           );
         })}
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default ProjectsGrid;

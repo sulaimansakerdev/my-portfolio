@@ -12,15 +12,26 @@ const AboutMe: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <section id="about" className="text-center">
-        <SectionHeader title="About Me" subtitle="Get to know me" />
+      <section
+        id="about"
+        className="text-center"
+        aria-labelledby="about-heading"
+        aria-describedby="about-description"
+      >
+        <SectionHeader title="About Me" subtitle="Get to know me" className="mb-40" />
 
         <p
+          id="about-description"
           className="mb-40 font-medium sm:text-xs md:text-base dark:text-neutral-200 text-neutral-600"
           dangerouslySetInnerHTML={{ __html: aboutMe }}
-        ></p>
+        />
 
-        <ButtonAsLink href={resumeHref} variant="rounded">
+        <ButtonAsLink
+          newTab
+          href={resumeHref}
+          variant="rounded"
+          aria-label="Download my resume in PDF format"
+        >
           Download Resume
         </ButtonAsLink>
       </section>
