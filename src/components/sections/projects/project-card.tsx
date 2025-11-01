@@ -10,7 +10,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { image, title, des, link } = project;
 
   return (
-    <article className="flex flex-col rounded-2xl overflow-hidden shadow-sm">
+    <article className="flex flex-col rounded-2xl overflow-hidden dark:shadow-sm">
       <Image
         src={image}
         alt={title}

@@ -58,6 +58,8 @@ const GetInTouch: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm(formData)) {
+      // your server logic goes here..
+
       toast.success("Message sent successfully!");
 
       setFormData({ name: "", email: "", service: "", message: "" });
