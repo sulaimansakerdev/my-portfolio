@@ -20,7 +20,7 @@ const Textarea: React.FC<TextareaProps> = ({
   placeholder,
   required,
   error,
-  rows = 8,
+  rows = 6,
   className = "",
 }) => {
   const errorId = error ? `${id}-error` : undefined;
@@ -45,7 +45,7 @@ const Textarea: React.FC<TextareaProps> = ({
         rows={rows}
         autoComplete="off"
         className={`w-full border border-neutral-600 dark:border-slate-200 rounded-lg
-          hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:text-zinc-400 px-32
+          hover:border-sky-400 focus:border-sky-400 focus:outline-none placeholder:text-zinc-400 px-32 py-16
           ${className}`}
       />
 

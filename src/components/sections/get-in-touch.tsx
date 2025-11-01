@@ -9,6 +9,7 @@ import SubmitButton from "../form/submit-button";
 import Input from "../form/input";
 import SectionHeader from "../ui/section-header";
 import services from "@/config/services";
+import toast, { Toaster } from "react-hot-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
@@ -52,13 +53,12 @@ const GetInTouch: React.FC = () => {
     const { id, value } = e.target;
     const updated = { ...formData, [id]: value };
     setFormData(updated);
-    validateForm(updated);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm(formData)) {
-      // send request with data
+      toast.success("Message sent successfully!");
 
       setFormData({ name: "", email: "", service: "", message: "" });
     }

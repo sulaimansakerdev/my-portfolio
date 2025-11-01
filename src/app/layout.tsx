@@ -7,6 +7,7 @@ import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import HeaderWithScroll from "@/components/layout/header-with-scroll";
 import metaData from "@/config/meta-data";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable}`}>
+        <Toaster position="top-right" />
+
         <ThemeProvider>
           <div className="fixed top-0 w-full z-10">
             <div className="container">

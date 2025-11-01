@@ -31,7 +31,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, onSelect, a
               }
             }}
             className={classNames(
-              "lg:min-w-115 px-25 h-55 py-15 border rounded-full text-xs xl:text-sm md:text-base border-neutral-600 cursor-pointer select-none",
+              "text-center lg:min-w-115 px-25 h-55 py-15 border rounded-full text-xs xl:text-sm md:text-base border-neutral-600 cursor-pointer select-none",
               {
                 "bg-neutral-600 text-neutral-100": isActive,
                 "text-neutral-600 dark:text-neutral-400": !isActive,

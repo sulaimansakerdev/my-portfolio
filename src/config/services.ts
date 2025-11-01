@@ -24,6 +24,11 @@ const services = [
     title: "Machine Learning",
     des: "From data to foresight, I craft predictive analytics and forecasting solutions that steer your business with precision, empowering strategic decisions and ensuring future success",
   },
+  {
+    id: "6",
+    title: "AI & Deep Learning Consulting",
+    des: "I provide expert AI and deep learning consulting services, helping businesses implement advanced neural networks, optimize models, and harness AI for transformative innovation and growth.",
+  },
 ];
 
 export default services;

@@ -16,7 +16,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({ emailId, className = "", ariaLabe
       href={`mailto:${emailId}`}
       aria-label={accessibleLabel}
       className={classNames(
-        "inline-block border border-neutral-600 rounded-2xl text-xs md:text-lg lg:text-2xl p-11 md:p-26 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2",
+        "inline-block border border-neutral-600 rounded-2xl text-xs md:text-lg lg:text-2xl p-10 md:px-26 md:py-18 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2",
         className
       )}
     >
