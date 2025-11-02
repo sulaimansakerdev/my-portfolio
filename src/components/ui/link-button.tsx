@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import classNames from "classnames";
 
-interface ButtonAsLinkProps {
+interface LinkButtonProps {
   href: string;
   variant?: "normal" | "rounded";
   ariaLabel?: string;
@@ -12,7 +12,7 @@ interface ButtonAsLinkProps {
   download?: boolean;
 }
 
-const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
+const LinkButton: React.FC<LinkButtonProps> = ({
   variant = "normal",
   href,
   ariaLabel,
@@ -42,4 +42,4 @@ const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
   );
 };
 
-export default ButtonAsLink;
+export default LinkButton;

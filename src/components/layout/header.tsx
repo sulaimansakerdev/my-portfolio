@@ -2,7 +2,7 @@ import LogoIcon from "../icons/logo-icon";
 import NavLinks from "../ui/nav-links";
 import DarkModeToggle from "../ui/dark-mode-toggle";
 import MobileMenu from "../ui/mobile-menu";
-import ButtonAsLink from "../ui/button-as-link";
+import LinkButton from "../ui/link-button";
 import classNames from "classnames";
 import Link from "next/link";
 import navLinks from "@/config/nav-links";
@@ -31,12 +31,12 @@ const Header: React.FC<HeaderProps> = ({ collapsed = false }) => {
       >
         <NavLinks links={navLinks} />
 
-        <ButtonAsLink
+        <LinkButton
           href="#contact-me"
           className="border-2 dark:border-1 dark:text-white text-neutral-600"
         >
           Contact Me
-        </ButtonAsLink>
+        </LinkButton>
 
         <DarkModeToggle />
       </nav>

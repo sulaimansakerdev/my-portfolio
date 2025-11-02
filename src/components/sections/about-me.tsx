@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedDiv from "../animation/animated-div";
 import SectionHeader from "../ui/section-header";
-import ButtonAsLink from "../ui/button-as-link";
+import LinkButton from "../ui/link-button";
 import resumeHref from "@/config/resume-href";
 import aboutMe from "@/config/about-me";
 
@@ -26,14 +26,14 @@ const AboutMe: React.FC = () => {
           dangerouslySetInnerHTML={{ __html: aboutMe }}
         />
 
-        <ButtonAsLink
+        <LinkButton
           newTab
           href={resumeHref}
           variant="rounded"
           aria-label="Download my resume in PDF format"
         >
           Download Resume
-        </ButtonAsLink>
+        </LinkButton>
       </section>
     </AnimatedDiv>
   );

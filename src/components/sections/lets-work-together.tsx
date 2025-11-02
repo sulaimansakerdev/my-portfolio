@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedDiv from "../animation/animated-div";
-import EmailLink from "../ui/email-link";
+import MailLink from "../ui/mail-link";
 import emailId from "@/config/email-id";
 
 const LetsWorkTogether: React.FC = () => {
@@ -23,7 +23,7 @@ const LetsWorkTogether: React.FC = () => {
           <span>Work Together -</span>
         </h2>
 
-        <EmailLink emailId={emailId} />
+        <MailLink emailId={emailId} />
       </section>
     </AnimatedDiv>
   );

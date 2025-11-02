@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             src="/assets/icons/link-icon.svg"
             alt=""
             width={38}
-            height={28}
+            height={38}
             aria-hidden="true"
           />
         </a>

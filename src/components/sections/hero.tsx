@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroBackground from "../ui/hero-background";
 import photo from "../../../public/assets/images/my-photo.svg";
-import ButtonAsLink from "../ui/button-as-link";
+import LinkButton from "../ui/link-button";
 import AnimatedDiv from "../animation/animated-div";
 import hero from "@/config/hero";
 
@@ -42,9 +42,9 @@ const Hero = () => {
               {hero.des}
             </p>
 
-            <ButtonAsLink href="#contact-me" variant="rounded" aria-label="Go to contact section">
+            <LinkButton href="#contact-me" variant="rounded" aria-label="Go to contact section">
               Contact Me
-            </ButtonAsLink>
+            </LinkButton>
           </div>
         </div>
       </section>

@@ -2,13 +2,13 @@ import React from "react";
 import classNames from "classnames";
 import Image from "next/image";
 
-interface EmailLinkProps {
+interface MailLinkProps {
   emailId: string;
   className?: string;
   ariaLabel?: string;
 }
 
-const EmailLink: React.FC<EmailLinkProps> = ({ emailId, className = "", ariaLabel }) => {
+const MailLink: React.FC<MailLinkProps> = ({ emailId, className = "", ariaLabel }) => {
   const accessibleLabel = ariaLabel ?? `Send an email to ${emailId}`;
 
   return (
@@ -30,4 +30,4 @@ const EmailLink: React.FC<EmailLinkProps> = ({ emailId, className = "", ariaLabe
   );
 };
 
-export default EmailLink;
+export default MailLink;
