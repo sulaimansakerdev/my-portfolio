@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+import type { Config } from "tailwindcss";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const config: Config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)", "var(--font-inter)", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
 };
 
-export default nextConfig;
+export default config;

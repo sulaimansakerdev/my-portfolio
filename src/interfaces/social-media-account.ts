@@ -1,7 +1,10 @@
 interface SocialMediaAccount {
-  icon: string;
+  name: string;
+  icons: {
+    dark: string;
+    light: string;
+  };
   url: string;
-  theme: string;
 }
 
 export default SocialMediaAccount;

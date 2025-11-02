@@ -24,7 +24,7 @@ const Hero = () => {
 
             <h1
               id="hero-heading"
-              className="leading-[auto] text-neutral-600 dark:text-white font-bold text-center text-4xl md:text-4xl lg:text-3xl xl:text-6xl"
+              className="font-sans leading-[auto] text-neutral-600 dark:text-white font-bold text-center text-4xl md:text-4xl lg:text-3xl xl:text-6xl"
             >
               {hero.title}
             </h1>

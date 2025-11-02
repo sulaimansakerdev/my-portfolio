@@ -1,6 +1,6 @@
 import React from "react";
-import GmailIcon from "../icons/gmail-icon";
 import classNames from "classnames";
+import Image from "next/image";
 
 interface EmailLinkProps {
   emailId: string;
@@ -22,7 +22,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({ emailId, className = "", ariaLabe
     >
       <div className="flex items-center gap-8 lg:gap-15 justify-center md:items-center md:justify-center">
         <span aria-hidden="true">
-          <GmailIcon />
+          <Image width={24} height={24} src="/assets/icons/gmail.svg" alt="" />
         </span>
         <span>{emailId}</span>
       </div>

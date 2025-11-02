@@ -18,7 +18,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, onClick, className = "" }) =
               href={link.href}
               target={link.target}
               onClick={onClick}
-              className="hover:text-sky-400 text-zinc-950 dark:text-stone-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 rounded"
+              className="font-sans font-semibold hover:text-sky-400 text-zinc-950 dark:text-stone-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 rounded"
             >
               {link.label}
             </Link>

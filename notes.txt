@@ -1,8 +1,0 @@
-Check animation again
-check the icons 
-check the UI components 
-Add what I do icons 
-check the responsiveness
-Enhance the accessibility 
-use headlessui
-add config file

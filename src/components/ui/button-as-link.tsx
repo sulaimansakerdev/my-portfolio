@@ -22,7 +22,7 @@ const ButtonAsLink: React.FC<ButtonAsLinkProps> = ({
   download = false,
 }) => {
   const baseStyles =
-    "inline-block border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2";
+    "font-sans inline-block border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2";
 
   const variantStyles =
     variant === "rounded" ? "rounded-full px-49.5 py-16" : "rounded-lg md:px-10 lg:px-19 py-11";

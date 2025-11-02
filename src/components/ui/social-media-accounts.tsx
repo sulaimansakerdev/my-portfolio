@@ -12,12 +12,10 @@ interface SocialMediaAccountsProps {
 const SocialMediaAccounts: React.FC<SocialMediaAccountsProps> = ({ accounts }) => {
   const { theme } = useTheme();
 
-  const filteredAccounts = accounts.filter((item) => item.theme === theme);
-
   return (
     <nav aria-label="Social media links">
       <ul className="flex justify-center items-center gap-20">
-        {filteredAccounts.map((item) => (
+        {accounts.map((item) => (
           <li key={item.url}>
             <a
               href={item.url}
@@ -29,9 +27,9 @@ const SocialMediaAccounts: React.FC<SocialMediaAccountsProps> = ({ accounts }) =
               <Image
                 width={32}
                 height={32}
-                className="cursor-pointer"
-                src={item.icon}
-                alt={item.name}
+                className="cursor-pointer transition-transform duration-200 hover:scale-110"
+                src={theme === "dark" ? item.icons.dark : item.icons.light}
+                alt={`${item.name} icon`}
               />
             </a>
           </li>

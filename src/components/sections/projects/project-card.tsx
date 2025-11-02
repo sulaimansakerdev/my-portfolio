@@ -1,5 +1,4 @@
 import Image from "next/image";
-import LinkIcon from "@/components/icons/link-icon";
 import Project from "@/interfaces/project";
 
 interface ProjectCardProps {
@@ -32,7 +31,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           aria-label={`Visit ${title} project`}
           className="hover:rotate-45 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 rounded"
         >
-          <LinkIcon aria-hidden="true" />
+          <Image
+            src="/assets/icons/link-icon.svg"
+            alt=""
+            width={38}
+            height={28}
+            aria-hidden="true"
+          />
         </a>
       </div>
     </article>
