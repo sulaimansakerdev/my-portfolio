@@ -12,7 +12,7 @@ const categories: Category[] = [
 const projects: Project[] = [
   {
     id: "1",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Project name/description",
     des: "Technology used sql AILLMS",
     category: ["sql"],
@@ -20,7 +20,7 @@ const projects: Project[] = [
   },
   {
     id: "2",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Project name/description",
     des: "Web Design / Usability Testing sql DATa",
     category: ["sql"],
@@ -28,7 +28,7 @@ const projects: Project[] = [
   },
   {
     id: "3",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Natural Language Processing",
     des: "Web Design / Usability Testing AILLMS DATA",
     category: ["AiLLMS"],
@@ -36,7 +36,7 @@ const projects: Project[] = [
   },
   {
     id: "4",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     id: "5",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
@@ -52,7 +52,7 @@ const projects: Project[] = [
   },
   {
     id: "6",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
@@ -60,7 +60,7 @@ const projects: Project[] = [
   },
   {
     id: "7",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
@@ -68,7 +68,7 @@ const projects: Project[] = [
   },
   {
     id: "8",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
@@ -76,7 +76,7 @@ const projects: Project[] = [
   },
   {
     id: "9",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
@@ -84,7 +84,7 @@ const projects: Project[] = [
   },
   {
     id: "10",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
@@ -92,7 +92,7 @@ const projects: Project[] = [
   },
   {
     id: "11",
-    image: "/assets/images/project-image.png",
+    image: "/assets/images/projects/project5.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["sql"],
@@ -100,7 +100,7 @@ const projects: Project[] = [
   },
   {
     id: "12",
-    image: "/assets/images/pro-img-1.png",
+    image: "/assets/images/projects/project1.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
@@ -108,7 +108,7 @@ const projects: Project[] = [
   },
   {
     id: "13",
-    image: "/assets/images/pro-img-2.png",
+    image: "/assets/images/projects/project2.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
@@ -116,7 +116,7 @@ const projects: Project[] = [
   },
   {
     id: "14",
-    image: "/assets/images/pro-img-3.png",
+    image: "/assets/images/projects/project3.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
@@ -124,7 +124,7 @@ const projects: Project[] = [
   },
   {
     id: "15",
-    image: "/assets/images/pro-img-4.png",
+    image: "/assets/images/projects/project4.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
@@ -132,7 +132,7 @@ const projects: Project[] = [
   },
   {
     id: "16",
-    image: "/assets/images/pro-img-1.png",
+    image: "/assets/images/projects/project1.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
@@ -140,7 +140,7 @@ const projects: Project[] = [
   },
   {
     id: "17",
-    image: "/assets/images/pro-img-2.png",
+    image: "/assets/images/projects/project2.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["AiLLMS"],
@@ -148,7 +148,7 @@ const projects: Project[] = [
   },
   {
     id: "18",
-    image: "/assets/images/pro-img-3.png",
+    image: "/assets/images/projects/project3.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
@@ -156,7 +156,7 @@ const projects: Project[] = [
   },
   {
     id: "19",
-    image: "/assets/images/pro-img-4.png",
+    image: "/assets/images/projects/project4.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
@@ -164,7 +164,7 @@ const projects: Project[] = [
   },
   {
     id: "20",
-    image: "/assets/images/pro-img-1.png",
+    image: "/assets/images/projects/project1.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
@@ -172,7 +172,7 @@ const projects: Project[] = [
   },
   {
     id: "21",
-    image: "/assets/images/pro-img-2.png",
+    image: "/assets/images/projects/project2.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
@@ -180,7 +180,7 @@ const projects: Project[] = [
   },
   {
     id: "22",
-    image: "/assets/images/pro-img-3.png",
+    image: "/assets/images/projects/project3.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
@@ -188,7 +188,7 @@ const projects: Project[] = [
   },
   {
     id: "23",
-    image: "/assets/images/pro-img-4.png",
+    image: "/assets/images/projects/project4.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["DataScience"],
@@ -196,7 +196,7 @@ const projects: Project[] = [
   },
   {
     id: "24",
-    image: "/assets/images/pro-img-1.png",
+    image: "/assets/images/projects/project1.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
@@ -204,7 +204,7 @@ const projects: Project[] = [
   },
   {
     id: "25",
-    image: "/assets/images/pro-img-2.png",
+    image: "/assets/images/projects/project2.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
@@ -212,7 +212,7 @@ const projects: Project[] = [
   },
   {
     id: "26",
-    image: "/assets/images/pro-img-3.png",
+    image: "/assets/images/projects/project3.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
@@ -220,7 +220,7 @@ const projects: Project[] = [
   },
   {
     id: "27",
-    image: "/assets/images/pro-img-4.png",
+    image: "/assets/images/projects/project4.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
@@ -228,7 +228,7 @@ const projects: Project[] = [
   },
   {
     id: "28",
-    image: "/assets/images/pro-img-1.png",
+    image: "/assets/images/projects/project1.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
@@ -236,7 +236,7 @@ const projects: Project[] = [
   },
   {
     id: "29",
-    image: "/assets/images/pro-img-2.png",
+    image: "/assets/images/projects/project2.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["MachineLearning"],
@@ -244,7 +244,7 @@ const projects: Project[] = [
   },
   {
     id: "30",
-    image: "/assets/images/pro-img-3.png",
+    image: "/assets/images/projects/project3.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],
@@ -252,7 +252,7 @@ const projects: Project[] = [
   },
   {
     id: "31",
-    image: "/assets/images/pro-img-4.png",
+    image: "/assets/images/projects/project4.png",
     title: "Educational Platform",
     des: "Web Design / Usability Testing",
     category: ["PowerBI"],

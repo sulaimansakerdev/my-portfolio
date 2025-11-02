@@ -19,7 +19,6 @@ const Button: React.FC<ButtonProps> = ({
   isLoading = false,
   disabled,
   type = "button",
-  ...props
 }) => {
   const baseStyles =
     "border border-neutral-600 dark:border-sky-400 hover:bg-sky-400 hover:text-white cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed";
@@ -34,7 +33,6 @@ const Button: React.FC<ButtonProps> = ({
       className={classNames(baseStyles, variantStyles, className)}
       disabled={disabled || isLoading}
       aria-disabled={disabled || isLoading}
-      {...props}
     >
       {isLoading ? <span className="sr-only">Loading...</span> : children}
     </button>

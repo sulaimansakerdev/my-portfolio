@@ -9,7 +9,7 @@ import SubmitButton from "../form/submit-button";
 import Input from "../form/input";
 import SectionHeader from "../ui/section-header";
 import services from "@/config/services";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),

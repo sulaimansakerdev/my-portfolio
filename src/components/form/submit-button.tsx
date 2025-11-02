@@ -1,18 +1,13 @@
 import React from "react";
 import classNames from "classnames";
 
-interface SubmitButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface SubmitButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
 }
 
-const SubmitButton: React.FC<SubmitButtonProps> = ({
-  disabled = false,
-  children,
-  className,
-  ...props
-}) => {
+const SubmitButton: React.FC<SubmitButtonProps> = ({ disabled = false, children, className }) => {
   return (
     <button
       type="submit"
@@ -27,7 +22,6 @@ const SubmitButton: React.FC<SubmitButtonProps> = ({
         },
         className
       )}
-      {...props}
     >
       {children}
     </button>

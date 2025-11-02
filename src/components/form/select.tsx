@@ -70,7 +70,7 @@ const Select: React.FC<SelectProps> = ({
           width={15}
           height={15}
           className="w-15 h-15 transform transition-transform duration-200 absolute right-25 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400"
-          src="/assets/images/select-arrow.svg"
+          src="/assets/icons/select-arrow.svg"
           alt=""
           aria-hidden="true"
         />

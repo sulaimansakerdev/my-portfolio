@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HeroBackground from "../ui/hero-background";
-import photo from "../../../public/assets/images/photo.svg";
+import photo from "../../../public/assets/images/my-photo.svg";
 import ButtonAsLink from "../ui/button-as-link";
 import AnimatedDiv from "../animation/animated-div";
 import hero from "@/config/hero";
@@ -18,21 +18,8 @@ const Hero = () => {
         aria-describedby="hero-description"
         role="banner"
       >
-        <div
-          className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex justify-center overflow-clip"
-          aria-hidden="true"
-        >
-          <AnimatedDiv
-            initial={{ opacity: 0, y: 0 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 5 }}
-          >
-            <HeroBackground className="h-[100vh]" />
-          </AnimatedDiv>
-        </div>
-
-        <div className="container flex justify-center items-center h-[calc(100vh-var(--header-height))]">
-          <div className="md:w-1/2 flex flex-col items-center">
+        <div className="flex justify-center items-center h-[calc(100vh-var(--header-height))]">
+          <div className="flex flex-col items-center">
             <Image src={photo} alt="Portrait of the site owner" />
 
             <h1
