@@ -10,7 +10,7 @@ interface MobileMenuProps {
   links: { label: string; href: string }[];
 }
 
-const MobileMenu = ({ links }: MobileMenuProps) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ links }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleShowMenu = () => {

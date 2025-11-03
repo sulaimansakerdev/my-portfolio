@@ -4,11 +4,11 @@ import { useTheme } from "@/contexts/ThemeContext";
 import HeroBackgroundDarkTheme from "../icons/hero-background-dark-theme";
 import HeroBackgroundLightTheme from "../icons/hero-background-light-theme";
 
-interface Props {
+interface HeroBackgroundProps {
   className?: string;
 }
 
-const HeroBackground: React.FC<Props> = ({ className }) => {
+const HeroBackground: React.FC<HeroBackgroundProps> = ({ className }) => {
   const { theme } = useTheme();
 
   if (theme === "dark") {

@@ -1,11 +1,10 @@
 import Image from "next/image";
-import HeroBackground from "../ui/hero-background";
 import photo from "../../../public/assets/images/my-photo.svg";
 import LinkButton from "../ui/link-button";
 import AnimatedDiv from "../animation/animated-div";
 import hero from "@/config/hero";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <AnimatedDiv
       initial={{ opacity: 0, y: 80 }}
